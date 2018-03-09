@@ -77,7 +77,7 @@
     }
   };
 
-  const keys = document.querySelectorAll('.key');
+  const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', effect.removeEffect));
   document.addEventListener ('keydown',effect.playSound);
 </script>
